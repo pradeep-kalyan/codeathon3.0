@@ -14,6 +14,7 @@
     "@fontsource/orbitron": "^5.1.1",
     "@fontsource/press-start-2p": "^5.1.1",
     "@material-tailwind/react": "^2.1.10",
+    "@vercel/speed-insights": "^1.2.0",
     "framer-motion": "^12.4.3",
     "lucide-react": "^0.475.0",
     "motion": "^12.4.3",

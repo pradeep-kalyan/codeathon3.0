@@ -1,5 +1,5 @@
 import React from "react";
-import Gun from "../assets/images/Gun.png";
+import Gun from "../../public/assets/images/Gun.png";
 import { motion } from "framer-motion";
 
 const Rules = () => {

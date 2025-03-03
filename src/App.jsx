@@ -4,6 +4,7 @@ import Join from "./pages/Join";
 import { useEffect, useState } from "react";
 import Codeathon1 from "./pages/Codeathon1";
 import Codeathon2 from "./pages/Codeathon2";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -39,6 +40,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home timeLeft={time} />} />
+        <SpeedInsights />
         <Route path="/join" element={<Join timeLeft={time} />} />
         <Route path="/codeathon1" element={<Codeathon1 />} />
         <Route path="/codeathon2" element={<Codeathon2 />} />

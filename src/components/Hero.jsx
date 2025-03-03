@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import img from "../assets/images/hp.png";
-import master from "../assets/images/Master.png";
+import master from "../../public/assets/images/Master.png";
 
 const Hero = ({ timeLeft }) => {
   return (

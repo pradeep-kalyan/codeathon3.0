@@ -1,96 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import ticket from "../assets/images/Mask4.png";
+import ticket from "../../public/assets/images/Mask4.png";
 
 const Join = ({ timeLeft }) => {
-  const api_endpoint = "http://127.0.0.1:8000/api/create/";
-  const [formData, setFormData] = useState({
-    name: "",
-    mobile: "",
-    email: "",
-    collegename: "",
-    department: "",
-    year: "",
-  });
-  const [errors, setErrors] = useState({});
-  const [serverError, setServerError] = useState(null);
-  const [successMessage, setSuccessMessage] = useState(null);
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
-
-  const validateForm = () => {
-    let tempErrors = {};
-    if (!formData.name) tempErrors.name = "Name is required";
-    if (!formData.mobile || !formData.mobile.match(/^[6-9]\d{9}$/))
-      tempErrors.mobile = "Invalid mobile number";
-    if (
-      !formData.email ||
-      !formData.email.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
-    )
-      tempErrors.email = "Invalid email";
-    if (!formData.collegename)
-      tempErrors.collegename = "College name is required";
-    if (!formData.department) tempErrors.department = "Department is required";
-    if (!formData.year) tempErrors.year = "Select a year";
-    setErrors(tempErrors);
-    return Object.keys(tempErrors).length === 0;
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!validateForm()) {
-      setServerError("🚨 Please fix the errors!");
-      setSuccessMessage(null);
-      return;
-    }
-
-    setLoading(true);
-    setServerError(null);
-    setSuccessMessage(null);
-
-    try {
-      const response = await fetch(api_endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        if (data.error && data.error.includes("already registered")) {
-          throw new Error(
-            "🚨 User already registered with this email or mobile number."
-          );
-        }
-        throw new Error(
-          data.error ||
-            "Registration unsuccessful. Please use a unique email ID and unique mobile number."
-        );
-      }
-
-      setSuccessMessage("✅ Registration successful! Welcome to the event 🎉");
-      setFormData({
-        name: "",
-        mobile: "",
-        email: "",
-        collegename: "",
-        department: "",
-        year: "",
-      });
-      setErrors({});
-    } catch (err) {
-      setServerError(err.message || "Something went wrong. Try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <div className=" conatiner mx-auto w-full  flex justify-center items-center md:overflow-hidden overflow-auto m-5">
       <motion.div
