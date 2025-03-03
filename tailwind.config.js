@@ -16,7 +16,7 @@ module.exports = withMT({
         great: ["Great Vibes", "cursive"],
       },
       cursor: {
-        pointer: "url('images/cp.png'), auto",
+        pointer: "url('/images/cp.png'), auto",
       },
     },
   },
