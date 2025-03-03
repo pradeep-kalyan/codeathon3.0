@@ -15,9 +15,6 @@ module.exports = withMT({
         electro: ["Electrolize", "cursive"],
         great: ["Great Vibes", "cursive"],
       },
-      cursor: {
-        pointer: "url('/images/cp.png'), auto",
-      },
     },
   },
   plugins: [],

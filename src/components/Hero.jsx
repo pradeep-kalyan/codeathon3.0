@@ -87,7 +87,7 @@ const Hero = ({ timeLeft }) => {
 
       <NavLink
         to={"/join"}
-        className="mt-10 px-8 py-4 text-lg font-audio font-semibold text-white bg-pink-500 hover:bg-gradient-to-r from-red-700 to-pink-500 rounded-xl cursor-pointer shadow-lg transition duration-300 hover:shadow-[0_0_20px_rgba(255,0,0,0.9)]"
+        className="mt-10 px-8 py-4 text-lg font-audio font-semibold text-white bg-pink-500 hover:bg-gradient-to-r from-red-700 to-pink-500 rounded-xl custom-cursor shadow-lg transition duration-300 hover:shadow-[0_0_20px_rgba(255,0,0,0.9)]"
       >
         Join Us
       </NavLink>

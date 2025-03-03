@@ -13,13 +13,13 @@ const Achievements = () => {
       <ul className="flex flex-wrap justify-center mt-4 gap-4 text-center">
         <NavLink
           to={"/codeathon1"}
-          className="text-4xl font-money text-red-500 hover:text-blue-500 border-4 border-pink-600 px-6 py-2 transition-all duration-300 hover:scale-105 cursor-pointer"
+          className="text-4xl font-money text-red-500 hover:text-blue-500 border-4 border-pink-600 px-6 py-2 transition-all duration-300 hover:scale-105 custom-cursor"
         >
           Codeathon 1.0
         </NavLink>
         <NavLink
           to={"/codeathon2"}
-          className="font-money text-4xl text-red-500 hover:text-blue-500 border-4 border-pink-600 px-6 py-2 transition-all duration-300 hover:scale-105 cursor-pointer"
+          className="font-money text-4xl text-red-500 hover:text-blue-500 border-4 border-pink-600 px-6 py-2 transition-all duration-300 hover:scale-105 custom-cursor"
         >
           Codeathon 2.0
         </NavLink>

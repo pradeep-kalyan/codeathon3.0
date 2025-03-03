@@ -36,7 +36,7 @@ const Navbar = () => {
                   spy={true}
                   offset={-70}
                   activeClass="text-pink-400"
-                  className="relative cursor-pointer font-squid hover:text-pink-400 transition duration-300"
+                  className="relative custom-cursor font-squid hover:text-pink-400 transition duration-300"
                 >
                   {item.name}
                   <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-500 transition-all duration-300 hover:w-full"></span>
@@ -67,7 +67,7 @@ const Navbar = () => {
                   spy={true}
                   offset={-70}
                   activeClass="text-pink-400"
-                  className="cursor-pointer font-squid hover:text-pink-400 transition duration-300"
+                  className="custom-cursor font-squid hover:text-pink-400 transition duration-300"
                   onClick={() => setIsOpen(false)} // Close menu on link click
                 >
                   {item.name}

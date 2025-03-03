@@ -9,7 +9,7 @@ const Codeathon1 = () => {
       <iframe
         width="800"
         height="600"
-        className="md:w-[800px] md:h-[600px] mt-10 w-full h-[350px] m-10 cursor-pointer "
+        className="md:w-[800px] md:h-[600px] mt-10 w-full h-[350px] m-10 custom-cursor "
         src="https://www.youtube.com/embed/6FAhf-aA2YU?si=WbWnMjxb6F58Qnbn"
         title="Codeathon 1.0 "
         frameborder="0"

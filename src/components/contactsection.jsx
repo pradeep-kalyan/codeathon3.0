@@ -8,13 +8,13 @@ const ContactSection = ({ name, position, number, mail }) => {
       <h2 className="text-lg font-audio text-gray-300">{position}</h2>
       <a
         href={`tel:${number}`}
-        className="text-lg font-semibold cursor-pointer font-courier text-gray-200 hover:text-pink-500 hover:underline mt-2"
+        className="text-lg font-semibold custom-cursor font-courier text-gray-200 hover:text-pink-500 hover:underline mt-2"
       >
         📞 {number}
       </a>
       <a
         href={`mailto:${mail}`}
-        className="text-lg font-semibold cursor-pointer font-courier text-gray-200 hover:text-pink-500 hover:underline mt-1"
+        className="text-lg font-semibold custom-cursor font-courier text-gray-200 hover:text-pink-500 hover:underline mt-1"
       >
         ✉️ {mail}
       </a>

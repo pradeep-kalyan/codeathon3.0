@@ -68,14 +68,14 @@ const Game = () => {
           className="w-12 h-12 bg-blue-500 rounded-full shadow-md border-2 border-white"
         ></motion.div>
         <button
-          className="px-6 py-3 bg-blue-600 cursor-pointer hover:bg-blue-500 transition duration-300 ease-in-out transform hover:scale-105 rounded-lg text-lg font-semibold shadow-lg"
+          className="px-6 py-3 bg-blue-600 custom-cursor hover:bg-blue-500 transition duration-300 ease-in-out transform hover:scale-105 rounded-lg text-lg font-semibold shadow-lg"
           onClick={moveForward}
           disabled={gameOver || gameWon}
         >
           Move 🚶‍♂️
         </button>
         <button
-          className="px-6 py-3 bg-red-600 cursor-pointer hover:bg-red-500 transition duration-300 ease-in-out transform hover:scale-105 rounded-lg text-lg font-semibold shadow-lg"
+          className="px-6 py-3 bg-red-600 custom-cursor hover:bg-red-500 transition duration-300 ease-in-out transform hover:scale-105 rounded-lg text-lg font-semibold shadow-lg"
           onClick={resetGame}
         >
           Try Again 🔄
