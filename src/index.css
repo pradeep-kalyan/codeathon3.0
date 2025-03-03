@@ -16,5 +16,5 @@
   font-style: normal;
 }
 .custom-cursor {
-  cursor: url("/images/cp.png"), auto;
+  cursor: url("/images/cp.png"), pointer, auto;
 }
