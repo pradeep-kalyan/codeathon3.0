@@ -5,13 +5,13 @@
 
 @font-face {
   font-family: "game-of-squids";
-  src: url("../public/assets/fonts/Game\ Of\ Squids.ttf");
+  src: url("/fonts/Game\ Of\ Squids.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "CompactaBT";
-  src: url("../public/assets/fonts/CompactaBT.ttf");
+  src: url("/fonts/CompactaBT.ttf");
   font-weight: normal;
   font-style: normal;
 }

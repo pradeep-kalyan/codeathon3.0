@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ticket from "../../public/assets/images/Mask4.png";
+import ticket from "../assets/images/Mask4.png";
 
 const Join = ({ timeLeft }) => {
   return (
