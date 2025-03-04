@@ -13,7 +13,7 @@ const Contact = ({ Title, Description }) => {
       </h1>
 
       {/* Description */}
-      <p className="text-gray-300 text-lg text-center max-w-[800px]">
+      <p className="text-gray-300 font-courier text-lg text-center max-w-[800px]">
         {Description}
       </p>
 

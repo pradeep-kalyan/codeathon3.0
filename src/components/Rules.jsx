@@ -17,11 +17,17 @@ const Rules = () => {
         {/* Rules List */}
         <ul className="flex flex-col space-y-4 mt-6 text-lg text-gray-300 list-none px-6 md:px-12">
           {[
-            "Each participant must register individually or as a team.",
-            "All submissions must be original and adhere to ethical coding practices.",
-            "Use of AI-generated code is allowed but must be properly credited.",
-            "The final submission deadline is strictly enforced.",
-            "Judging criteria include innovation, efficiency, and presentation.",
+            "Valid student ID is mandatory; selected teams must submit a Bonafide certificate.",
+            "Maximum 3 members per team.",
+            "Teams must bring their own laptops and extension box.",
+            "Use of any technology, tools, or IoT sensors is allowed.",
+            "Work strictly within the contest venue; no external help or hints permitted.",
+            "At least one team member must be actively coding at all times.",
+            "No discussion of problems with other teams.",
+            "Referees will monitor teams and report any violations.",
+            "Any rule violation may lead to disqualification.",
+            "Dinner and snacks will be provided.",
+            "Accommodation is available on 22nd March for final contestants.",
           ].map((rule, index) => (
             <li
               key={index}
@@ -40,7 +46,7 @@ const Rules = () => {
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="w-[250px] hover:scale-10 p-4"
+        className="w-[350px] hover:scale-10 p-4"
         transition={{ duration: 0.5 }}
       >
         <img

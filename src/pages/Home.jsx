@@ -37,12 +37,12 @@ const Home = ({ timeLeft }) => {
         <Organising
           id="organising"
           Title={"Organising Commitee"}
-          Description={"here is Your wonderful Organising Commitee"}
+          Description={"Say hello to the incredible team behind Codeathon 3.0!"}
         />
         <Contact
           id="contact"
           Title={"Contact US"}
-          Description={"If you have any doubts feel free to contact our leads"}
+          Description={"Have questions? We're here to help!"}
         />
         <Achievements id="achievements" />
         <Prizes />
