@@ -27,7 +27,7 @@ const Rules = () => {
             "Referees will monitor teams and report any violations.",
             "Any rule violation may lead to disqualification.",
             "Dinner and snacks will be provided.",
-            "Accommodation is available on 22nd March for final contestants.",
+            // "Accommodation is available on 22nd March for final contestants.",
           ].map((rule, index) => (
             <li
               key={index}
