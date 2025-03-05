@@ -46,10 +46,6 @@ const Home = ({ timeLeft }) => {
         />
         <Achievements id="achievements" />
         <Prizes />
-        <h2 className="text-2xl flex justify-end items-end m-5 container mx-auto font-ls text-white">
-          Designed By Pradeep Kalyan S <br /> BE/CSE 3rd year <br /> @prathyusha
-          engineering college
-        </h2>
       </motion.div>
     </>
   );

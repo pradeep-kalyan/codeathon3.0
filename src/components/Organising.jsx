@@ -20,22 +20,22 @@ const Organising = ({ Title, Description }) => {
       {/* Contact List */}
       <div className="flex flex-wrap justify-center items-center mt-6">
         <ContactSection
-          name="Dr Thamba Meshach"
+          name="Dr. W.Thamba Meshach"
           position="HOD/CSE"
           number="+91 98406 17030"
           mail="hod.cse@prathyusha.edu.in"
         />
         <ContactSection
-          name="Ms GunaSundhari"
+          name="Ms. B.Gunasundari"
           position="Event Co-ordinator"
           number="+91 98433 58385"
-          mail=""
+          mail="gunasundhari.cse@prathyusha.edu.in"
         />
         <ContactSection
-          name="Ms Kezhia"
+          name="Ms. H.Kezia"
           position="Event Co-ordinator"
-          number="+91 98433 58385"
-          mail=""
+          number="+91 99411 80140"
+          mail="kezia.cse@prathyusha.edu.in"
         />
       </div>
     </div>

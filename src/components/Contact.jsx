@@ -20,13 +20,13 @@ const Contact = ({ Title, Description }) => {
       {/* Contact List */}
       <div className="flex flex-wrap justify-center items-center mt-6">
         <ContactSection
-          name="Vijay Kumar"
+          name="Vijay Kumar C"
           position="Event Coordinator"
           number="+91 93603 72093"
-          mail="babulvijay@gmail.com"
+          mail="vijaycse2709@gmail.com"
         />
         <ContactSection
-          name="Pradeep Kalyan"
+          name="Pradeep Kalyan S"
           position="Tech Lead"
           number="+91 8148596830"
           mail="pradeepkalyan1275@gmail.com"
@@ -35,7 +35,13 @@ const Contact = ({ Title, Description }) => {
           name="Dinakaran R"
           position="Marketing Head"
           number="+91 85240 86107"
-          mail="example.com"
+          mail="dinakaranrajkumar07@gmail.com"
+        />
+        <ContactSection
+          name="Hanuja D"
+          position="Public Relations"
+          number="+91 7010828497"
+          mail="hanuja2005@gmail.com"
         />
       </div>
     </div>

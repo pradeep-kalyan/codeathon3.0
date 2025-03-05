@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ticket from "../assets/images/Mask4.png";
+import { Link } from "react-router-dom";
+import { House } from "lucide-react";
 
 const Join = ({ timeLeft }) => {
   return (
@@ -35,7 +37,7 @@ const Join = ({ timeLeft }) => {
             />
           </motion.div>
         </div>
-        <div className="w-full flex justify-center">
+        <div className="w-full flex items-center justify-center">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLScwQ5Fz1ZPBzkJUSEu_C_2FdmqHpw9mpkKqG0KTDBlZKTcXYw/viewform?embedded=true"
             className="w-full md:w-[640px] h-[1560px] md:h-[800px] border-none"
@@ -43,6 +45,16 @@ const Join = ({ timeLeft }) => {
             Loading…
           </iframe>
         </div>
+        <Link
+          to={"/"}
+          smooth={true}
+          duration={500}
+          className="text-pink-500 hover:text-white  font-squid font-bold text-lg cursor-pointer mt-5"
+        >
+          <span className="flex justify-center items-center gap-2">
+            Go to Home <House size={30} />
+          </span>
+        </Link>
       </motion.div>
     </div>
   );

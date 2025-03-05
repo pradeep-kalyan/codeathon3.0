@@ -8,7 +8,7 @@ const Achievements = () => {
       className="max-w-[1200px] m-[1200px]  container mx-auto bg-black my-6 h-auto rounded-2xl shadow-lg flex flex-col justify-center items-center p-10 text-white border-4 border-pink-500"
     >
       <h1 className="font-squid text-3xl text-center bg-gradient-to-b from-pink-500 to-gray-300 bg-clip-text text-transparent m-5 drop-shadow-[0_0_10px_rgba(255,0,0,0.9)]">
-        Achievements
+        Glimpse of Previous Years' Codeathon
       </h1>
       <ul className="flex flex-wrap justify-center mt-4 gap-4 text-center">
         <NavLink
