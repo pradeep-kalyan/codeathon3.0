@@ -99,7 +99,7 @@ const Hero = ({ timeLeft, regTime }) => {
 
       {/* Registration Timer */}
       {regTime ? (
-        <div className="m-5 p-8 flex justify-center items-center md:flex-col ">
+        <div className="m-5 p-8 flex  justify-center items-center flex-col ">
           <h2 className="text-xl font-semibold text-pink-400 uppercase">
             Registration Ends in
           </h2>

@@ -1,5 +1,5 @@
 import React from "react";
-import ContactSection from "./contactsection";
+import Contactorg from "./Contactorg";
 
 const Organising = ({ Title, Description }) => {
   return (
@@ -19,21 +19,23 @@ const Organising = ({ Title, Description }) => {
 
       {/* Contact List */}
       <div className="flex flex-wrap justify-center items-center mt-6">
-        <ContactSection
+        <Contactorg
           name="Dr. W.Thamba Meshach"
           position="HOD/CSE"
           number="+91 98406 17030"
           mail="hod.cse@prathyusha.edu.in"
         />
-        <ContactSection
+        <Contactorg
           name="Ms. B.Gunasundari"
-          position="Event Co-ordinator"
+          position="Assistant Professor/CSE"
+          role="Event Co-ordinator"
           number="+91 98433 58385"
           mail="gunasundari.cse@prathyusha.edu.in"
         />
-        <ContactSection
+        <Contactorg
           name="Ms. H.Kezia"
-          position="Event Co-ordinator"
+          position="Assistant Professor/CSE"
+          role="Event Co-ordinator"
           number="+91 99411 80140"
           mail="kezia.cse@prathyusha.edu.in"
         />

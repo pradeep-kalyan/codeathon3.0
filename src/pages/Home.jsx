@@ -27,7 +27,7 @@ const Home = ({ timeLeft, regTime }) => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="pb-10"
+        className="pb-10 overflow-x-hidden md:overflow-x-auto"
       >
         <Navbar />
         <Hero id="hero" timeLeft={timeLeft} regTime={regTime} />
