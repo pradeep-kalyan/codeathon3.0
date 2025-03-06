@@ -47,7 +47,7 @@ const Rules = () => {
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="w-[350px] hover:scale-10 p-4"
+        className="w-[350px] hover:scale-10 p-4 justify-center items-center flex "
         transition={{ duration: 0.5 }}
       >
         <img
