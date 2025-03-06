@@ -19,16 +19,17 @@ const Rules = () => {
           {[
             "Valid student ID is mandatory and  selected teams must submit a Bonafide certificate.",
             "Teams can have up to 4 members, including 1 lead and 3 members.",
+            "The decision of the jury members is final and binding",
             "Teams must bring their own laptops and other required accessories.",
             "Use of any technology, tools, or IoT sensors is allowed.",
             "Work strictly within the contest venue and no external help or hints permitted.",
             "At least one team member must be actively coding at all times.",
             "No discussion of problems with other teams.",
-            "Referees will monitor teams and report any violations.",
+            "Referees will monitor all teams and report any violations.",
             "Any rule violation may lead to disqualification.",
             "Dinner and snacks will be served.",
             "Light refreshments will be available.",
-            "It is suggested to bring your extension cords and Wi-Fi dongles.",
+            "It is suggested to bring your extension boxes and Wi-Fi dongles.",
           ].map((rule, index) => (
             <li
               key={index}
@@ -53,7 +54,7 @@ const Rules = () => {
         <img
           src={Gun}
           alt="rules"
-          className="md:w-[250px] w-[200px]  bg-contain rounded-xl hover:scale-110 transition-transform duration-300 ease-in-out"
+          className="md:w-[250px] w-[200px] p-5  bg-contain rounded-xl hover:scale-110 transition-transform duration-300 ease-in-out"
         />
       </motion.div>
     </div>
