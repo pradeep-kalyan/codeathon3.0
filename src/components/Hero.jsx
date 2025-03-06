@@ -40,9 +40,9 @@ const Hero = ({ timeLeft }) => {
         transition={{ duration: 1, delay: 0.5 }}
         className="flex gap-4 mt-4"
       >
-        <div className="w-10 h-10 border-4 border-white rounded-full"></div>
-        <div className="w-10 h-10 border-4 border-white"></div>
-        <div className="w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[40px] border-b-white"></div>
+        <div className="w-10 h-10 border-4 border-white hover:border-pink-600 rounded-full"></div>
+        <div className="w-10 h-10 border-4 border-white hover:border-pink-600"></div>
+        <div className="w-0 h-0 border-l-[20px] border-l-transparent  border-r-[20px] border-r-transparent border-b-[40px] border-b-white hover:border-b-pink-600"></div>
       </motion.div>
 
       {/* Event Description */}
@@ -63,7 +63,7 @@ const Hero = ({ timeLeft }) => {
         transition={{ duration: 1, delay: 1 }}
         className="text-center mt-6"
       >
-        <h2 className="text-lg font-semibold text-pink-400 uppercase">
+        <h2 className="text-xl font-semibold text-pink-400 uppercase">
           Codeathon Starts in
         </h2>
         {timeLeft ? (

@@ -42,7 +42,7 @@ const Prizes = () => {
   const prizeList = [
     { text: "🏆 First Prize", amount: "10,000" },
     { text: "🥈 Second Prize", amount: "7,500" },
-    { text: "🥉 Special Prize", amount: "5,000" },
+    // { text: "🥉 Special Prize", amount: "5,000" },
     // { text: "💰 Consolation", amount: "1,000" },
   ];
 
