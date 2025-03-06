@@ -10,18 +10,18 @@ import Prizes from "../components/Prizes";
 import Game from "../components/Game";
 import Organising from "../components/Organising";
 
-const Home = ({ timeLeft }) => {
+const Home = ({ timeLeft, regTime }) => {
   const { scrollYProgress } = useScroll();
 
   return (
     <>
-      {/* Scroll progress line */}
+      {/* Scroll progress bar */}
       <motion.div
         className="fixed top-0 left-0 h-1 bg-green-500 origin-left w-full z-50"
         style={{ scaleX: scrollYProgress }}
       />
 
-      {/* Page content */}
+      {/* Main page content with fade-in animation */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -30,19 +30,19 @@ const Home = ({ timeLeft }) => {
         className="pb-10"
       >
         <Navbar />
-        <Hero id="hero" timeLeft={timeLeft} />
+        <Hero id="hero" timeLeft={timeLeft} regTime={regTime} />
         <Game />
         <Rules id="rules" />
         <About id="about" />
         <Organising
           id="organising"
-          Title={"Organising Commitee"}
-          Description={"Say hello to the incredible team behind Codeathon 3.0!"}
+          Title="Organising Committee"
+          Description="Say hello to the incredible team behind Codeathon 3.0!"
         />
         <Contact
           id="contact"
-          Title={"Contact US"}
-          Description={"Have questions? We're here to help!"}
+          Title="Contact Us"
+          Description="Have questions? We're here to help!"
         />
         <Achievements id="achievements" />
         <Prizes />

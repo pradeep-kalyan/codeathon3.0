@@ -29,7 +29,7 @@ const Organising = ({ Title, Description }) => {
           name="Ms. B.Gunasundari"
           position="Event Co-ordinator"
           number="+91 98433 58385"
-          mail="gunasundhari.cse@prathyusha.edu.in"
+          mail="gunasundari.cse@prathyusha.edu.in"
         />
         <ContactSection
           name="Ms. H.Kezia"

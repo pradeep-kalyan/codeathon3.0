@@ -37,12 +37,12 @@ const Contact = ({ Title, Description }) => {
           number="+91 85240 86107"
           mail="dinakaranrajkumar07@gmail.com"
         />
-        <ContactSection
+        {/* <ContactSection
           name="Hanuja D"
           position="Public Relations"
           number="+91 7010828497"
           mail="hanuja2005@gmail.com"
-        />
+        /> */}
       </div>
     </div>
   );

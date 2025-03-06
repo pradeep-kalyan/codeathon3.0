@@ -1,4 +1,4 @@
-const ContactSection = ({ name, position, number, mail }) => {
+const ContactSection = ({ name, position, number }) => {
   return (
     <div
       id="contact"
@@ -12,12 +12,12 @@ const ContactSection = ({ name, position, number, mail }) => {
       >
         📞 {number}
       </a>
-      <a
+      {/* <a
         href={`mailto:${mail}`}
         className="text-lg font-semibold cursor-pointer font-courier text-gray-200 hover:text-pink-500 hover:underline mt-1"
       >
         ✉️ {mail}
-      </a>
+      </a> */}
     </div>
   );
 };
