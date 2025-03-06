@@ -21,7 +21,7 @@ const Contact = ({ Title, Description }) => {
       <div className="flex flex-wrap justify-center items-center mt-6">
         <ContactSection
           name="Vijay Kumar C"
-          position="Event Coordinator"
+          position="Event Flow Manager"
           number="+91 93603 72093"
           mail="vijaycse2709@gmail.com"
         />
