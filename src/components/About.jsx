@@ -10,21 +10,26 @@ const About = () => {
         About Us
       </h1>
 
-      <p className="text-gray-300 mt-5 font-courier text-center text-wrap md:text-2xl text-xl">
-        Welcome to <strong>Codeathon</strong>, the ultimate coding challenge
-        where innovation meets creativity! This event brings together Students,
-        problem-solvers, and tech enthusiasts to showcase their coding skills,
-        collaborate on exciting projects, and compete for amazing rewards.
-        Whether you're a beginner or an expert, Codeathon offers a platform to
-        test your abilities, learn from peers, and build something
-        extraordinary. With challenging problem statements, mentorship from
-        industry experts, and an opportunity to network with like-minded
-        individuals, this is your chance to{" "}
+      <p className="text-gray-300 mt-5 font-courier text-center text-wrap md:text-2xl p-8 text-xl">
+        Welcome to <strong>Codeathon</strong> , the ultimate coding challenge
+        where innovation meets creativity!{" "}
+        <strong>
+          Organized by Department OF Computer Science & Engineering,Prathyusha
+          Engineering College,
+        </strong>{" "}
+        this event brings together students, problem-solvers, and tech
+        enthusiasts to showcase their coding skills, collaborate on exciting
+        projects, and compete for amazing rewards. Whether you're a beginner or
+        an expert, Codeathon offers a platform to test your abilities, learn
+        from peers, and build something extraordinary. With challenging problem
+        statements, mentorship from industry experts, and an opportunity to
+        network with like-minded individuals, this is your chance to{" "}
         <strong className="font-semibold text-green-500 tracking-wider text-3xl">
-          code, compete, and conquer
-        </strong>
-        ! Are you ready to take on the challenge? Join Codeathon and unleash
-        your coding potential!
+          {" "}
+          code, compete, and conquer!{" "}
+        </strong>{" "}
+        Are you ready to take on the challenge? Join Codeathon and unleash your
+        coding potential!" code, compete, and conquer
       </p>
     </div>
   );
