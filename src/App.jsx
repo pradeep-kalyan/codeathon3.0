@@ -7,8 +7,8 @@ import Codeathon2 from "./pages/Codeathon2";
 
 function App() {
   // Set event and registration deadlines
-  const eventDate = new Date("2025-03-25T10:00:00").getTime();
-  const regDate = new Date("2025-03-22T10:00:00").getTime();
+  const eventDate = new Date("2025-03-25T08:00:00").getTime();
+  const regDate = new Date("2025-03-23T00:00:00").getTime();
 
   // Calculate remaining time
   const calculateTimeLeft = (targetDate) => {

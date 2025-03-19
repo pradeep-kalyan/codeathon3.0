@@ -14,7 +14,7 @@ const About = () => {
         Welcome to <strong>Codeathon</strong> , the ultimate coding challenge
         where innovation meets creativity!{" "}
         <strong>
-          Organized by Department OF Computer Science & Engineering,Prathyusha
+          Organized by Department OF Computer Science & Engineering, Prathyusha
           Engineering College,
         </strong>{" "}
         this event brings together students, problem-solvers, and tech
