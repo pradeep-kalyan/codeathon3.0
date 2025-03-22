@@ -69,19 +69,24 @@ const Hero = ({ timeLeft, regTime }) => {
           Codeathon Starts in
         </h2>
         {timeLeft ? (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 1,
-              repeat: Infinity,
-              repeatType: "mirror",
-            }}
-            className="flex gap-4 mt-2 md:text-4xl text-3xl font-bold text-white drop-shadow-[0_0_15px_rgba(255,0,0,1)]"
-          >
-            <span>{timeLeft.days}d</span>:<span>{timeLeft.hours}h</span>:
-            <span>{timeLeft.minutes}m</span>:<span>{timeLeft.seconds}s</span>
-          </motion.div>
+          <>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "mirror",
+              }}
+              className="flex gap-4 mt-2 md:text-4xl text-3xl font-bold text-white drop-shadow-[0_0_15px_rgba(255,0,0,1)]"
+            >
+              <span>{timeLeft.days}d</span>:<span>{timeLeft.hours}h</span>:
+              <span>{timeLeft.minutes}m</span>:<span>{timeLeft.seconds}s</span>
+            </motion.div>
+            <p className="text-2xl  m-4 font-squid font-semibold text-pink-600 ">
+              Registrations Closed
+            </p>
+          </>
         ) : (
           <h3 className="text-4xl font-bold mt-2 text-red-500">
             Event Started!
@@ -90,15 +95,15 @@ const Hero = ({ timeLeft, regTime }) => {
       </motion.div>
 
       {/* Animated Join Button */}
-      <NavLink
+      {/* <NavLink
         to="/join"
         className="mt-10 px-8 py-4 text-lg font-audio font-semibold text-white bg-pink-500 hover:bg-gradient-to-r from-red-700 to-pink-500 rounded-xl custom-cursor shadow-lg transition duration-300 hover:shadow-[0_0_20px_rgba(255,0,0,0.9)]"
       >
         Join Us
-      </NavLink>
+      </NavLink> */}
 
       {/* Registration Timer */}
-      {regTime ? (
+      {/* {regTime ? (
         <div className="m-5 p-8 flex  justify-center items-center flex-col ">
           <h2 className="text-xl font-semibold text-pink-400 uppercase">
             Registration Ends in
@@ -121,7 +126,7 @@ const Hero = ({ timeLeft, regTime }) => {
         <h3 className="text-4xl font-bold mt-2 text-red-500">
           Registration Ended!
         </h3>
-      )}
+      )} */}
     </motion.div>
   );
 };

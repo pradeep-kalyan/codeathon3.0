@@ -8,7 +8,7 @@ import Codeathon2 from "./pages/Codeathon2";
 function App() {
   // Set event and registration deadlines
   const eventDate = new Date("2025-03-25T08:00:00").getTime();
-  const regDate = new Date("2025-03-23T00:00:00").getTime();
+  // const regDate = new Date("2025-03-22T07:28:00").getTime();
 
   // Calculate remaining time
   const calculateTimeLeft = (targetDate) => {
@@ -28,7 +28,7 @@ function App() {
 
   // State for countdown timers
   const [eventTime, setEventTime] = useState(calculateTimeLeft(eventDate));
-  const [regTime, setRegTime] = useState(calculateTimeLeft(regDate));
+  // const [regTime, setRegTime] = useState(calculateTimeLeft(regDate));
 
   // Timer to update countdown every second
   useEffect(() => {
@@ -45,9 +45,9 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Home timeLeft={eventTime} regTime={regTime} />}
+          element={<Home timeLeft={eventTime} />}
         />
-        <Route path="/join" element={<Join timeLeft={regTime} />} />
+        {/* <Route path="/join" element={<Join />} /> */}
         <Route path="/codeathon1" element={<Codeathon1 />} />
         <Route path="/codeathon2" element={<Codeathon2 />} />
       </Routes>
